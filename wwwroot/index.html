@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/SharkIcon.png" type="image/x-icon" />
+    <title>Kaden Johnson</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/gradecalc.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Kaden Johnson</h1>
+        <img src="img/FlyFishing.jpg" height="300" width="250" />
+        <br />
+        <p>
+            I hope to learn a lot about app development and especially how to use C# effectively. I am excited to work with a strongly typed language
+            and can't wait to apply what I learn in this class to my future internship in development.
+        </p>
+    </center>
+    <p>Top 3 jobs after graduation:</p>
+    <ol>
+        <li>App Development at BNSF</li>
+        <li>Cybersecurity at Verizon</li>
+        <li>Software Development at Amazon</li>
+    </ol>
+    <h3>Grade Calculator:</h3>
+    <p><b>Enter in your grade percentage for each category of the class below: </b></p>
+    <form>
+        <label>Assignments: </label>
+        <input id="a" /><br />
+        <label>Group Project: </label>
+        <input id="gp" /><br />
+        <label>Quizzes: </label>
+        <input id="q" /><br />
+        <label>Exams: </label>
+        <input id="e" /><br />
+        <label>INTEX: </label>
+        <input id="i" /><br /><br />
+        <button type="button" onclick="Calculate()">Submit</button>
+    </form>
+    <b><p id="output" class="output">Final Grade: </p></b>
+</body>
+</html>
