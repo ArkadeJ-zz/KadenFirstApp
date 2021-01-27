@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="~/img/SharkIcon.png" type="image/x-icon" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalc">Grade calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+    <br />
+
+    @RenderBody()
+
+    <br />
+    <footer>
+        <h3>Thanks for visiting!</h3>
+    </footer>
+</body>
+</html>
