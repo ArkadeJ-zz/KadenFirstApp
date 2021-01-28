@@ -23,7 +23,7 @@ namespace KadenFirstApp.Controllers
         [HttpPost("GradeCalc")]
         public IActionResult GradeCalc(GradesModel model)
         {
-            return View();//Go in and fix the submit function
+            return View();
         }
     }
 }

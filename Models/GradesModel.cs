@@ -7,20 +7,15 @@ using System.Threading.Tasks;
 namespace KadenFirstApp.Models
 {
     public class GradesModel{
-        [Required]
         [Range(0, 100, ErrorMessage = "Grade Percentage must be between 0% and 100%")]
-        public int Assignments { get; set; }
-        [Required]
+        public double Assignments { get; set; }
         [Range(0, 100, ErrorMessage = "Grade Percentage must be between 0% and 100%")]
-        public int Groupprojects { get; set; }
-        [Required]
+        public double Groupprojects { get; set; }
         [Range(0, 100, ErrorMessage = "Grade Percentage must be between 0% and 100%")]
-        public int Quizzes { get; set; }
-        [Required]
+        public double Quizzes { get; set; }
         [Range(0, 100, ErrorMessage = "Grade Percentage must be between 0% and 100%")]
-        public int Exams { get; set; }
-        [Required]
+        public double Exams { get; set; }
         [Range(0, 100, ErrorMessage = "Grade Percentage must be between 0% and 100%")]
-        public int Intex { get; set; }
+        public double Intex { get; set; }
     }
 }

@@ -12,16 +12,16 @@
     <script src="~/js/gradecalc.js"></script>
     <form method="post">
         <label>Assignments: </label>
-        <input type="number" name="Assignments" id="Assignments" asp-for="Assignments" /><br />
+        <input id="Assignments" asp-for="Assignments" /><br />
         <label>Group Project: </label>
-        <input type="number" name="Groupprojects" id="Groupprojects" asp-for="Groupprojects" /><br />
+        <input id="Groupprojects" asp-for="Groupprojects" /><br />
         <label>Quizzes: </label>
-        <input type="number" name="Quizzes" id="Quizzes" asp-for="Quizzes" /><br />
+        <input id="Quizzes" asp-for="Quizzes" /><br />
         <label>Exams: </label>
-        <input type="number" name="Exams" id="Exams" asp-for="Exams" /><br />
+        <input id="Exams" asp-for="Exams" /><br />
         <label>INTEX: </label>
-        <input type="number" name="Intex" id="Intex" asp-for="Intex" /><br /><br />
-        <button type="button" onclick="Calculate()" id="submitButton">Calculate</button>
+        <input id="Intex" asp-for="Intex" /><br /><br />
+        <button onclick="Calculate()" type="submit" id="submitButton">Calculate</button>
         <div asp-validation-summary="All"></div>
     </form>
 </body>
