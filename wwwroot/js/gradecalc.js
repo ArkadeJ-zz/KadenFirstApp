@@ -1,9 +1,10 @@
-﻿function Calculate() {
-    let iAssignments = parseInt(document.getElementById("a").value);
-    let iGroupProjects = parseInt(document.getElementById("gp").value);
-    let iQuizzes = parseInt(document.getElementById("q").value);
-    let iExams = parseInt(document.getElementById("e").value);
-    let iIntex = parseInt(document.getElementById("i").value);
+﻿function Calculate()
+{
+    let iAssignments = $("#Assignments").val();
+    let iGroupProjects = $("#Groupprojects").val();
+    let iQuizzes = $("#Quizzes").val();
+    let iExams = $("#Exams").val();
+    let iIntex = $("#Intex").val();
     let iAW = 50;
     let iGPW = 10;
     let iQW = 10;
@@ -77,5 +78,5 @@
 
     let sOutput = GrandTotal + " % " + sLetter;
 
-    document.getElementById("output").innerHTML = sOutput
+    alert(sOutput);
 }
